@@ -19,7 +19,7 @@ namespace Assets.Scripts.Player
         {
             if (isGrounded)
             {
-                float jump = Input.GetAxisRaw(axisName) * 0.25f;
+                float jump = Input.GetAxisRaw(axisName) * 0.30f;
                 rigidBody.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
             }
         }

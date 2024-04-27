@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (player.PlayerMovement.IsActionChangeColorKeyDown())
+        if (player.PlayerMovement.IsActionChangeColorKeyDown() && transform.CompareTag("Target"))
         {
             ChangeColor();
         }

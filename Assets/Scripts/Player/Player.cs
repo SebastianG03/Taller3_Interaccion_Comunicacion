@@ -11,8 +11,7 @@ namespace Assets.Scripts.Player
         private float Horizontal;
         private bool IsGrounded;
         public PlayerMovement PlayerMovement { get; set; }
-        public bool IsSendingSignal { get; set; }
-
+        
         [SerializeField]
         private float Speed = 5;
 
@@ -30,7 +29,6 @@ namespace Assets.Scripts.Player
             IsGrounded = PlayerMovement.IsNotJumping(transform);
 
             Move();
-            IsSendingSignal = PlayerMovement.IsActionChangeColorKeyDown();
         }
 
         private void Move()
